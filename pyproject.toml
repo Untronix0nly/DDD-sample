@@ -3,7 +3,6 @@ name = "ddd"
 version = "0.1.0"
 description = ""
 authors = ["Samir Akhmed <warrior.owl@yandex.ru>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -15,6 +14,10 @@ asyncpg = "^0.30.0"
 sqlalchemy = "^2.0.40"
 alembic = "^1.15.2"
 redis = "^5.2.1"
+orjson = "^3.10.16"
+uvicorn = "^0.34.0"
+black = "^25.1.0"
+isort = "^6.0.1"
 
 
 [build-system]

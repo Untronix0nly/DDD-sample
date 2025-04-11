@@ -1,0 +1,37 @@
+1. Книга - Entity
+    Attributes:
+        ESBN: ValueObject
+        title: Value Title(> 10 символов)
+        data
+        topic: Value object[Value Object]
+    Actions:
+        1. Выдать книгу в аренду
+        2. Вернуть книгу назад
+
+
+2. User - Entity
+    Attributes
+        id
+        name: ValueObject
+        registration_date
+
+
+3. Loan - Entity
+    Attributes:
+        user_id
+        book_ESBN
+        given_date
+        duration
+    Actions:
+        Выдать книгу
+        Вернуть книгу
+     Invariant:
+        1. Нельзя вернуть книгу которяа уже возвращена
+        2. Нельзя выдать книгу которая уже выдана
+        3. После истечения duration от начала выдачи Load меняет состояние на "Просрочено"
+
+
+
+
+
+
