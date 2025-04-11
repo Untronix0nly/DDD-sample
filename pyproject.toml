@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ddd"
+version = "0.1.0"
+description = ""
+authors = ["Samir Akhmed <warrior.owl@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.5"
+fastapi = "^0.115.12"
+pydantic = "^2.11.3"
+pydantic-settings = "^2.8.1"
+asyncpg = "^0.30.0"
+sqlalchemy = "^2.0.40"
+alembic = "^1.15.2"
+redis = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
